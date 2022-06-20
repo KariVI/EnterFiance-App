@@ -15,7 +15,7 @@ public class UserContract {
     }
     public static final String SQL_CREATE_ENTRIES =
             "CREATE TABLE " + UserEntry.TABLE_NAME + " (" +
-                    UserEntry._ID + " INTEGER PRIMARY KEY," +
+                    UserEntry._ID + " INTEGER PRIMARY KEY autoincrement," +
                     UserEntry.FULLNAME + " TEXT," +
                     UserEntry.USERNAME + " TEXT," +
                     UserEntry.DATE + " TEXT," +
