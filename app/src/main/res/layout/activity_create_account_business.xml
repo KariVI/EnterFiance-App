@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccountBusiness"
+    android:background="#E8ECFC">
+
+    <ImageView
+        android:id="@+id/buttonBack"
+        android:layout_width="42dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backarrow" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/urbanistbold"
+        android:text="Completa tus datos"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonBack"
+        app:layout_constraintStart_toEndOf="@+id/buttonBack"
+        app:layout_constraintTop_toTopOf="@+id/buttonBack" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInputBusiness"
+        android:layout_width="355dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:fontFamily="@font/urbanistbold"
+            android:hint="Nombre de la empresa"
+            android:textColor="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/giroNegocioSpinner"
+        android:layout_width="345dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="25dp"
+        android:theme="@style/SpinnerTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputBusiness">
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/activeTimeInput"
+        android:layout_width="352dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#00FFFFFF"
+        android:ems="10"
+        android:focusable="false"
+        android:fontFamily="@font/urbanistbold"
+        android:maxLines="1"
+        android:text="Tiempo activo"
+        android:textAlignment="textStart"
+        android:textColor="#A1A1A1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/giroNegocioSpinner" />
+
+    <Button
+        android:id="@+id/backgroundOne"
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white"
+        android:text=""
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activeTimeInput" />
+
+    <Button
+        android:id="@+id/backgroundTwo"
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:clickable="false"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white"
+
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundOne" />
+
+    <Button
+        android:id="@+id/buttonConsumo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="125dp"
+        android:backgroundTint="@color/black"
+        android:background="@drawable/consumo"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundOne"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundOne"
+        app:layout_constraintStart_toStartOf="@+id/backgroundOne"
+        app:layout_constraintTop_toTopOf="@+id/backgroundOne" />
+
+    <Button
+        android:id="@+id/buttonService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:background="@drawable/service"
+        android:backgroundTint="@color/black"
+
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundOne"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundOne"
+        app:layout_constraintStart_toStartOf="@+id/backgroundOne"
+        app:layout_constraintTop_toTopOf="@+id/backgroundOne" />
+
+    <Button
+        android:id="@+id/buttonEmprendedor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="125dp"
+        android:backgroundTint="@color/black"
+        android:background="@drawable/emprendedor"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundTwo"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundTwo"
+        app:layout_constraintStart_toStartOf="@+id/backgroundTwo"
+        app:layout_constraintTop_toTopOf="@+id/backgroundTwo" />
+
+    <Button
+        android:id="@+id/buttonEmpresario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:backgroundTint="@color/black"
+        android:background="@drawable/empresario"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundTwo"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundTwo"
+        app:layout_constraintStart_toStartOf="@+id/backgroundTwo"
+        app:layout_constraintTop_toTopOf="@+id/backgroundTwo" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:elevation="3dp"
+        android:text="Consumo"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonConsumo"
+        app:layout_constraintEnd_toEndOf="@+id/buttonConsumo"
+        app:layout_constraintStart_toStartOf="@+id/buttonConsumo"
+        app:layout_constraintTop_toTopOf="@+id/buttonConsumo" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:elevation="3dp"
+        android:text="Servicio"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonService"
+        app:layout_constraintEnd_toEndOf="@+id/buttonService"
+        app:layout_constraintStart_toStartOf="@+id/buttonService"
+        app:layout_constraintTop_toTopOf="@+id/buttonService" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:elevation="3dp"
+        android:text="Emprendedor"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonEmprendedor"
+        app:layout_constraintEnd_toEndOf="@+id/buttonEmprendedor"
+        app:layout_constraintStart_toStartOf="@+id/buttonEmprendedor"
+        app:layout_constraintTop_toTopOf="@+id/buttonEmprendedor" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:elevation="3dp"
+        android:text="Empresario"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonEmpresario"
+        app:layout_constraintEnd_toEndOf="@+id/buttonEmpresario"
+        app:layout_constraintStart_toStartOf="@+id/buttonEmpresario"
+        app:layout_constraintTop_toTopOf="@+id/buttonEmpresario" />
+
+    <Button
+        android:id="@+id/buttonSaveBusiness"
+        android:layout_width="154dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#B8B7F2"
+        android:background="@drawable/rounded_corner"
+        android:text="Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundTwo" />
+
+    <ImageView
+        android:id="@+id/buttonInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backgroundOne"
+        app:layout_constraintTop_toTopOf="@+id/backgroundOne"
+        app:srcCompat="@drawable/information" />
+</androidx.constraintlayout.widget.ConstraintLayout>

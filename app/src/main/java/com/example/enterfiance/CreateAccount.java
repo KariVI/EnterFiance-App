@@ -42,6 +42,12 @@ public class CreateAccount extends AppCompatActivity {
             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                 }
         );
+        continueButton = findViewById(R.id.buttonContinue);
+        continueButton.setOnClickListener(v -> {
+            Intent intent = new Intent(CreateAccount.this, CreateAccountOptional.class);
+            startActivity(intent);
+            overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+        });
         setupSpinners();
     }
 

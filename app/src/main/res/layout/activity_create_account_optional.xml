@@ -60,6 +60,7 @@
 
     <Button
         android:id="@+id/backgroundOne"
+        android:clickable="false"
         android:layout_width="300dp"
         android:layout_height="170dp"
         android:layout_marginTop="50dp"
@@ -76,11 +77,40 @@
         android:layout_width="300dp"
         android:layout_height="170dp"
         android:layout_marginTop="75dp"
+        android:clickable="false"
         android:background="@drawable/rounded_corner"
         android:backgroundTint="@color/white"
         android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/buttonCompleteData"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="#B2B0F7"
+        android:text="➜"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundTwo"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundTwo"
+        app:layout_constraintStart_toStartOf="@+id/backgroundTwo"
+        app:layout_constraintTop_toTopOf="@+id/backgroundTwo" />
+
+    <Button
+        android:id="@+id/buttonCompleteLater"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="#B3AFFD"
+        android:text="➜"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundOne"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundOne"
+        app:layout_constraintStart_toStartOf="@+id/backgroundOne"
+        app:layout_constraintTop_toTopOf="@+id/backgroundOne" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

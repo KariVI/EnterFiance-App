@@ -11,7 +11,7 @@
         <item>Primaria</item>
         <item>Secundaria</item>
         <item>Preparatoria no decir</item>
-        <item>Universidad</item>
+        <item>Licenciatura</item>
         <item>Maestría</item>
         <item>Doctorado</item>
     </string-array>
@@ -23,6 +23,18 @@
         <item>Trabajador de gobierno</item>
         <item>Empresa privada</item>
         <item>Negocio propio</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="giroNegocioSpinner">
+        <item>Educación</item>
+        <item>Servicios de salud</item>
+        <item>Servicios de entretenimiento</item>
+        <item>Turismo</item>
+        <item>Transporte</item>
+        <item>Servicios públicos</item>
+        <item>Servicios administrativos</item>
+        <item>Otro</item>
     </string-array>
 
 </resources>
