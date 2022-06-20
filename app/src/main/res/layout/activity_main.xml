@@ -9,18 +9,16 @@
     <Button
         android:id="@+id/btStart"
         android:layout_width="154dp"
-        android:layout_height="67dp"
-        android:layout_marginStart="170dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="147dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/rounded_corner"
         android:backgroundTint="#B8B7F2"
         android:text="Empezar"
+        android:fontFamily="@font/urbanistbold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:rippleColor="#B8B7F2"
-        app:strokeColor="#B8B7F2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"/>
 
     <TextView
         android:id="@+id/textView"
@@ -29,8 +27,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="EnterFinance"
-        android:textColor="#A3A1ED"
+        android:textColor="#7673EC"
         android:textSize="34sp"
+        android:fontFamily="@font/urbanistbold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.201"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,6 +42,7 @@
         android:layout_marginTop="30dp"
         android:text="👋 Bienvenido a"
         android:textSize="20sp"
+        android:fontFamily="@font/urbanistbold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.156"
         app:layout_constraintStart_toStartOf="parent"

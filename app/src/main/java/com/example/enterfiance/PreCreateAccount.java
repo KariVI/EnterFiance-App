@@ -20,12 +20,14 @@ public class PreCreateAccount extends AppCompatActivity {
         imageView.setOnClickListener (v -> {
             Intent intent = new Intent(PreCreateAccount.this, MainActivity.class);
             startActivity(intent);
-        }
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+                }
         );
         btContinue = findViewById(R.id.btContinue);
         btContinue.setOnClickListener(v -> {
             Intent intent = new Intent(PreCreateAccount.this, CreateAccount.class);
             startActivity(intent);
+            overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
         });
     }
 }
