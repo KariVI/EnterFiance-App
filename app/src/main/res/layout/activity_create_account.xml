@@ -20,6 +20,7 @@
             android:id="@+id/userInput"
             android:layout_width="match_parent"
             android:layout_height="42dp"
+            android:fontFamily="@font/urbanistbold"
             android:hint="Usuario" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -39,8 +40,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="@font/urbanistbold"
         android:text="Completa tus datos"
+        android:textColor="#000000"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="@+id/backButton"
         app:layout_constraintStart_toEndOf="@+id/backButton"
@@ -50,34 +52,37 @@
         android:id="@+id/TextInputName"
         android:layout_width="355dp"
         android:layout_height="42dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4">
+        app:layout_constraintTop_toBottomOf="@+id/imageSelect">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/nameInput"
             android:layout_width="match_parent"
             android:layout_height="42dp"
-            android:hint="Nombre completo" />
+            android:fontFamily="@font/urbanistbold"
+            android:hint="Nombre completo"
+            android:textColor="#000000" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
+    <Button
         android:id="@+id/dateInput"
         android:layout_width="352dp"
         android:layout_height="42dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#00FFFFFF"
         android:ems="10"
-        android:inputType="date"
         android:focusable="false"
-        android:clickable="true"
+        android:fontFamily="@font/urbanistbold"
         android:maxLines="1"
         android:text="Fecha"
-
-        android:textColor="#9F9F9F"
+        android:textAlignment="textStart"
+        android:textColor="#A1A1A1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextInputUser" />
+        app:layout_constraintTop_toBottomOf="@+id/TextPhoneinput" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/TextPhoneinput"
@@ -89,48 +94,56 @@
         android:textColor="#9F9F9F"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dateInput">
+        app:layout_constraintTop_toBottomOf="@+id/TextInputUser">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="42dp"
+            android:fontFamily="@font/urbanistbold"
+
             android:hint="Número de teléfono" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Spinner
         android:id="@+id/genderSelector"
-        android:layout_width="352dp"
+        android:layout_width="345dp"
         android:layout_height="42dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
+        android:theme="@style/SpinnerTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@+id/TextPhoneinput" />
+        app:layout_constraintTop_toBottomOf="@+id/dateInput" />
 
     <Spinner
         android:id="@+id/gradeSelector"
-        android:layout_width="352dp"
+        android:layout_width="345dp"
         android:layout_height="42dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
+        android:theme="@style/SpinnerTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/genderSelector" />
 
     <Spinner
         android:id="@+id/occupationSpinner"
-        android:layout_width="352dp"
+        android:layout_width="345dp"
         android:layout_height="42dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
+        android:theme="@style/SpinnerTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gradeSelector" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonContinue"
         android:layout_width="154dp"
-        android:layout_height="67dp"
+        android:layout_height="60dp"
         android:layout_marginBottom="30dp"
         android:backgroundTint="#B8B7F2"
+        android:background="@drawable/rounded_corner"
         android:text="Continuar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -138,5 +151,15 @@
         app:layout_constraintTop_toBottomOf="@+id/occupationSpinner"
         app:rippleColor="#B8B7F2"
         app:strokeColor="#B8B7F2"/>
+
+    <ImageView
+        android:id="@+id/imageSelect"
+        android:layout_width="94dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/profile" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
