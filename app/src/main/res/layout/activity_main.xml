@@ -11,17 +11,14 @@
         android:layout_width="154dp"
         android:layout_height="67dp"
         android:layout_marginStart="170dp"
-        android:layout_marginTop="496dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="147dp"
-        android:layout_marginBottom="187dp"
         android:backgroundTint="#B8B7F2"
         android:text="Empezar"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
         app:rippleColor="#B8B7F2"
         app:strokeColor="#B8B7F2" />
 
@@ -30,26 +27,36 @@
         style="@style/Widget.Material3.MaterialTimePicker.Display.HelperText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="EnterFiance"
-        android:textColor="#BBB9F2"
+        android:layout_marginTop="15dp"
+        android:text="EnterFinance"
+        android:textColor="#A3A1ED"
         android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintHorizontal_bias="0.201"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.635" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenido a 👋"
+        android:layout_marginTop="30dp"
+        android:text="👋 Bienvenido a"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="357dp"
+        android:layout_height="342dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.562" />
+        app:srcCompat="@drawable/initialimage" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/jack-/AndroidStudioProjects/EnterFiance/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_create_account.xml" value="0.20465116279069767" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.18978118896484386" />
+        <entry key="app/src/main/res/layout/activity_pre_create_account.xml" value="0.1" />
       </map>
     </option>
   </component>
