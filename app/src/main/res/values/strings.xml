@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">EnterFiance</string>
+    <string-array name="genderSpinner">
+        <item>Género</item>
+        <item>Masculino</item>
+        <item>Femenino</item>
+        <item>Prefiero no decir</item>
+    </string-array>
+    <string-array name="gradeSpinner">
+        <item>Grado de estudios</item>
+        <item>Primaria</item>
+        <item>Secundaria</item>
+        <item>Preparatoria no decir</item>
+        <item>Universidad</item>
+        <item>Maestría</item>
+        <item>Doctorado</item>
+    </string-array>
+
+    <string-array name="ocupationSpinner">
+        <item>Ocupación</item>
+        <item>Estudiante</item>
+        <item>Maestro</item>
+        <item>Trabajador de gobierno</item>
+        <item>Empresa privada</item>
+        <item>Negocio propio</item>
+    </string-array>
+
 </resources>
