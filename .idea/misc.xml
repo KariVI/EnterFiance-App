@@ -4,7 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/jack-/AndroidStudioProjects/EnterFiance/app/src/main/res/layout/activity_main.xml" value="0.22" />
+<<<<<<< HEAD
+        <entry key="..\:/Users/jack-/Documents/GitHub/EnterFiance-App/app/src/main/res/layout/activity_create_account.xml" value="0.33" />
+=======
         <entry key="..\:/Users/jack-/Documents/GitHub/EnterFiance-App/app/src/main/res/layout/activity_create_account.xml" value="0.25" />
+>>>>>>> Gus
         <entry key="..\:/Users/jack-/Documents/GitHub/EnterFiance-App/app/src/main/res/layout/activity_create_account_optional.xml" value="0.1" />
         <entry key="..\:/Users/jack-/Documents/GitHub/EnterFiance-App/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/jack-/Documents/GitHub/EnterFiance-App/app/src/main/res/layout/activity_pre_create_account.xml" value="0.1" />
