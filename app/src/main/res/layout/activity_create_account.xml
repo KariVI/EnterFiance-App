@@ -71,7 +71,7 @@
         android:id="@+id/dateInput"
         android:layout_width="352dp"
         android:layout_height="42dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="#00FFFFFF"
         android:ems="10"
         android:focusable="false"
@@ -81,14 +81,14 @@
         android:textAlignment="textStart"
         android:textColor="#A1A1A1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextPhoneinput" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/TextPhoneinput"
         android:layout_width="352dp"
-        android:layout_height="42dp"
+        android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="date"
@@ -144,15 +144,17 @@
         android:layout_width="154dp"
         android:layout_height="60dp"
         android:layout_marginBottom="30dp"
-        android:backgroundTint="#B8B7F2"
         android:background="@drawable/rounded_corner"
+        android:backgroundTint="#B8B7F2"
         android:text="Continuar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/occupationSpinner"
+        app:layout_constraintVertical_bias="0.923"
         app:rippleColor="#B8B7F2"
-        app:strokeColor="#B8B7F2"/>
+        app:strokeColor="#B8B7F2" />
 
     <ImageView
         android:id="@+id/imageSelect"
