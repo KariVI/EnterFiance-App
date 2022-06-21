@@ -4,14 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/jack-/AndroidStudioProjects/EnterFiance/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="app/src/main/res/drawable/circle.xml" value="0.204" />
+        <entry key="..\:/Users/jack-/Documents/GitHub/EnterFiance-App/app/src/main/res/layout/activity_create_account.xml" value="0.25" />
+        <entry key="..\:/Users/jack-/Documents/GitHub/EnterFiance-App/app/src/main/res/layout/activity_create_account_optional.xml" value="0.1" />
+        <entry key="..\:/Users/jack-/Documents/GitHub/EnterFiance-App/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/jack-/Documents/GitHub/EnterFiance-App/app/src/main/res/layout/activity_pre_create_account.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/rounded_corner.xml" value="0.186" />
         <entry key="app/src/main/res/font/font_families.xml" value="0.18289473684210528" />
-        <entry key="app/src/main/res/layout/activity_create_account.xml" value="0.17497711181640627" />
-        <entry key="app/src/main/res/layout/activity_create_account_business.xml" value="0.1649734497070313" />
-        <entry key="app/src/main/res/layout/activity_create_account_optional.xml" value="0.23092041015625" />
+        <entry key="app/src/main/res/layout/activity_create_account.xml" value="0.38387908935546877" />
+        <entry key="app/src/main/res/layout/activity_create_account_optional.xml" value="0.30833129882812504" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.12898712158203127" />
-        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.19083862304687502" />
         <entry key="app/src/main/res/layout/activity_pre_create_account.xml" value="0.2183370124405025" />
         <entry key="app/src/main/res/layout/spinner_selected_item.xml" value="0.1" />
         <entry key="app/src/main/res/xml/button_style.xml" value="0.1381340579710145" />
