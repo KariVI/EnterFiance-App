@@ -56,24 +56,24 @@ public class CreateAccount extends AppCompatActivity {
         });
 
         imageView = findViewById(R.id.backButton);
-        imageView.setOnClickListener (v -> {
+        imageView.setOnClickListener(v -> {
             Intent intent = new Intent(CreateAccount.this, PreCreateAccount.class);
             startActivity(intent);
             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                 }
         );
-
+        setupSpinners();
         continueButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if(checkData()) {
+                if (checkData()) {
                     saveData();
-                    Intent intent = new Intent(CreateAccount.this, MainActivity.class);
+                    Intent intent = new Intent(CreateAccount.this, Menu.class);
                     startActivity(intent);
-                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 }
             }
+
         });
-        setupSpinners();
     }
 
     private boolean checkData(){
