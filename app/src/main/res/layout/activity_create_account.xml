@@ -17,11 +17,12 @@
         app:layout_constraintTop_toBottomOf="@+id/TextInputName">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/userInput"
+            android:id="@+id/usernameInput"
             android:layout_width="match_parent"
             android:layout_height="42dp"
             android:fontFamily="@font/urbanistbold"
-            android:hint="Usuario" />
+            android:hint="Usuario"
+            tools:ignore="TouchTargetSizeCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageView
@@ -97,10 +98,11 @@
         app:layout_constraintTop_toBottomOf="@+id/TextInputUser">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneInput"
             android:layout_width="match_parent"
             android:layout_height="42dp"
-            android:fontFamily="@font/urbanistbold"
 
+            android:fontFamily="@font/urbanistbold"
             android:hint="Número de teléfono" />
     </com.google.android.material.textfield.TextInputLayout>
 

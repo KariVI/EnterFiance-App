@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -17,17 +18,20 @@ public class PreCreateAccount extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pre_create_account);
         imageView = findViewById(R.id.imageBack);
-        imageView.setOnClickListener (v -> {
-            Intent intent = new Intent(PreCreateAccount.this, MainActivity.class);
-            startActivity(intent);
-            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+        imageView.setOnClickListener (new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(PreCreateAccount.this, MainActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                 }
-        );
+            });
         btContinue = findViewById(R.id.btContinue);
-        btContinue.setOnClickListener(v -> {
+        btContinue.setOnClickListener(new View.OnClickListener() {
+        public void onClick(View v) {
             Intent intent = new Intent(PreCreateAccount.this, CreateAccount.class);
             startActivity(intent);
             overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+        }
         });
     }
 }
