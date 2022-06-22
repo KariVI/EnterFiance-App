@@ -17,7 +17,7 @@ public class Menu extends AppCompatActivity {
         btInvest.setOnClickListener(new View.OnClickListener() {
             @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Menu.this, Investment.class);
+                    Intent intent = new Intent(Menu.this, PreInvestment.class);
 
                     startActivity(intent);
                         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);

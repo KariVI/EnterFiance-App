@@ -22,40 +22,42 @@
         android:id="@+id/textWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
         android:elevation="3dp"
         android:fontFamily="@font/urbanistbold"
         android:text="Inversión"
         android:textColor="#000000"
         android:textSize="35dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/buttonBackMenu"
+        app:layout_constraintStart_toEndOf="@+id/buttonBackMenu"
+        app:layout_constraintTop_toTopOf="@+id/buttonBackMenu" />
 
     <EditText
         android:id="@+id/benefitInput"
         android:layout_width="139dp"
         android:layout_height="48dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="36dp"
         android:ems="10"
         android:fontFamily="@font/urbanistbold"
-        android:inputType="textPersonName"
         android:hint="Beneficio"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toStartOf="@+id/investmentInput"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <EditText
         android:id="@+id/investmentInput"
         android:layout_width="139dp"
         android:layout_height="48dp"
-        android:layout_marginStart="204dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
         android:ems="10"
         android:fontFamily="@font/urbanistbold"
-        android:inputType="textPersonName"
         android:hint="Inversión"
-        app:layout_constraintStart_toStartOf="@+id/textView16"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <TextView
@@ -74,7 +76,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/urbanistbold"
         android:text="Resultados"
         android:textSize="20sp"
@@ -85,12 +87,13 @@
         android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="85dp"
         android:elevation="3dp"
         android:fontFamily="@font/urbanistbold"
         android:text="ROI = "
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/background"
-        app:layout_constraintEnd_toStartOf="@+id/tvRoi"
+        app:layout_constraintEnd_toEndOf="@+id/background"
         app:layout_constraintStart_toStartOf="@+id/background"
         app:layout_constraintTop_toTopOf="@+id/background" />
 
@@ -98,50 +101,50 @@
         android:id="@+id/tvRoi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
         android:elevation="3dp"
         android:fontFamily="@font/urbanistbold"
-        android:text="n/a"
+        android:text="0%
+"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/background"
         app:layout_constraintEnd_toEndOf="@+id/background"
-        app:layout_constraintHorizontal_bias="0.664"
-        app:layout_constraintStart_toEndOf="@+id/textView20"
-        app:layout_constraintTop_toTopOf="@+id/background"
-        app:layout_constraintVertical_bias="0.533" />
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/urbanistbold"
         android:text="Beneficio - Inversión"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/textWelcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textWelcome" />
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/urbanistbold"
         android:text="Inversión"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/textWelcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView19" />
 
     <TextView
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
         android:fontFamily="@font/urbanistbold"
         android:text="-----------------------------------"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/buttonBackMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <Button
@@ -149,33 +152,29 @@
         android:layout_width="98dp"
         android:layout_height="48dp"
         android:layout_marginTop="44dp"
-        android:layout_marginEnd="108dp"
         android:background="@drawable/rounded_corner"
         android:backgroundTint="#B8B7F2"
 
         android:fontFamily="@font/urbanistbold"
         android:text="Calcular"
-        app:layout_constraintEnd_toEndOf="@+id/investmentInput"
-        app:layout_constraintHorizontal_bias="0.992"
-        app:layout_constraintStart_toStartOf="@+id/benefitInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/investmentInput"
         app:rippleColor="#B8B7F2"
         app:strokeColor="#B8B7F2" />
 
     <Button
         android:id="@+id/background"
-        android:layout_width="241dp"
-        android:layout_height="73dp"
-        android:layout_marginBottom="112dp"
+        android:layout_width="242dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/rounded_corner"
         android:backgroundTint="@color/white"
         android:clickable="true"
         android:contentDescription="@string/app_name"
         android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
