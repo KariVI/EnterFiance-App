@@ -67,7 +67,7 @@ public class CreateAccount extends AppCompatActivity {
             public void onClick(View v) {
                 if (checkData()) {
                     saveData();
-                    Intent intent = new Intent(CreateAccount.this, Menu.class);
+                    Intent intent = new Intent(CreateAccount.this, CreateAccountOptional.class);
                     startActivity(intent);
                     overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 }

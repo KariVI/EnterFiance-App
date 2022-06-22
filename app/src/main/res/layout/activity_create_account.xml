@@ -152,7 +152,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/occupationSpinner"
-        app:layout_constraintVertical_bias="0.923"
+        app:layout_constraintVertical_bias="0.0"
         app:rippleColor="#B8B7F2"
         app:strokeColor="#B8B7F2" />
 

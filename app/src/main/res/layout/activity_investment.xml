@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5D5EF"
+    tools:context=".Menu">
+
+    <ImageView
+        android:id="@+id/buttonBackMenu"
+        android:layout_width="42dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:elevation="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backarrow" />
+
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="20dp"
+        android:elevation="3dp"
+        android:fontFamily="@font/urbanistbold"
+        android:text="Inversión"
+        android:textColor="#000000"
+        android:textSize="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/benefitInput"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:fontFamily="@font/urbanistbold"
+        android:inputType="textPersonName"
+        android:hint="Beneficio"
+        app:layout_constraintEnd_toStartOf="@+id/investmentInput"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <EditText
+        android:id="@+id/investmentInput"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:fontFamily="@font/urbanistbold"
+        android:inputType="textPersonName"
+        android:hint="Inversión"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/urbanistbold"
+        android:text="Ingresa los datos"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/buttonBackMenu"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/urbanistbold"
+        android:text="Resultados"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/buttonBackMenu"
+        app:layout_constraintTop_toBottomOf="@+id/btCalculate" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:fontFamily="@font/urbanistbold"
+        android:text="ROI = "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toStartOf="@+id/tvRoi"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background" />
+
+    <TextView
+        android:id="@+id/tvRoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:fontFamily="@font/urbanistbold"
+        android:text="n/a"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintHorizontal_bias="0.664"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/urbanistbold"
+        android:text="Beneficio - Inversión"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textWelcome"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/urbanistbold"
+        android:text="Inversión"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textWelcome"
+        app:layout_constraintTop_toTopOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:fontFamily="@font/urbanistbold"
+        android:text="-----------------------------------"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/buttonBackMenu"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <Button
+        android:id="@+id/btCalculate"
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="108dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#B8B7F2"
+
+        android:fontFamily="@font/urbanistbold"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="@+id/investmentInput"
+        app:layout_constraintHorizontal_bias="0.992"
+        app:layout_constraintStart_toStartOf="@+id/benefitInput"
+        app:layout_constraintTop_toBottomOf="@+id/investmentInput"
+        app:rippleColor="#B8B7F2"
+        app:strokeColor="#B8B7F2" />
+
+    <Button
+        android:id="@+id/background"
+        android:layout_width="241dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="112dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

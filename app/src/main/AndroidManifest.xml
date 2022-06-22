@@ -29,6 +29,9 @@
             android:name=".PreCreateAccount"
             android:exported="false" />
         <activity
+            android:name=".Investment"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
