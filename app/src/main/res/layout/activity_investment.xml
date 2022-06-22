@@ -79,7 +79,39 @@
         android:text="Resultados"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/buttonBackMenu"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btCalculate" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="164dp"
+        android:elevation="3dp"
+        android:fontFamily="@font/urbanistbold"
+        android:text="ROI = "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvRoi"
+        android:layout_width="55dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="164dp"
+        android:elevation="3dp"
+        android:fontFamily="@font/urbanistbold"
+        android:text="n/a"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView17"
@@ -109,15 +141,15 @@
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="52dp"
         android:fontFamily="@font/urbanistbold"
-        android:text="---------------------------------------------------------"
+        android:text="-----------------------------------"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/buttonBackMenu"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btCalculate"
         android:layout_width="98dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
@@ -128,7 +160,7 @@
         android:fontFamily="@font/urbanistbold"
         android:text="Calcular"
         app:layout_constraintEnd_toEndOf="@+id/investmentInput"
-        app:layout_constraintHorizontal_bias="0.992"
+        app:layout_constraintHorizontal_bias="0.925"
         app:layout_constraintStart_toStartOf="@+id/benefitInput"
         app:layout_constraintTop_toBottomOf="@+id/investmentInput"
         app:rippleColor="#B8B7F2"
@@ -148,6 +180,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.392"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
