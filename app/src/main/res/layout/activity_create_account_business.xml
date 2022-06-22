@@ -81,7 +81,7 @@
         app:layout_constraintTop_toBottomOf="@+id/giroNegocioSpinner" />
 
     <Button
-        android:id="@+id/backgroundOne"
+        android:id="@+id/background"
         android:layout_width="300dp"
         android:layout_height="170dp"
         android:layout_marginTop="25dp"
@@ -106,7 +106,7 @@
         android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backgroundOne" />
+        app:layout_constraintTop_toBottomOf="@+id/background" />
 
     <Button
         android:id="@+id/buttonConsumo"
@@ -115,10 +115,10 @@
         android:layout_marginEnd="125dp"
         android:backgroundTint="@color/black"
         android:background="@drawable/consumo"
-        app:layout_constraintBottom_toBottomOf="@+id/backgroundOne"
-        app:layout_constraintEnd_toEndOf="@+id/backgroundOne"
-        app:layout_constraintStart_toStartOf="@+id/backgroundOne"
-        app:layout_constraintTop_toTopOf="@+id/backgroundOne" />
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background" />
 
     <Button
         android:id="@+id/buttonService"
@@ -128,10 +128,10 @@
         android:background="@drawable/service"
         android:backgroundTint="@color/black"
 
-        app:layout_constraintBottom_toBottomOf="@+id/backgroundOne"
-        app:layout_constraintEnd_toEndOf="@+id/backgroundOne"
-        app:layout_constraintStart_toStartOf="@+id/backgroundOne"
-        app:layout_constraintTop_toTopOf="@+id/backgroundOne" />
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background" />
 
     <Button
         android:id="@+id/buttonEmprendedor"
@@ -223,7 +223,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/backgroundOne"
-        app:layout_constraintTop_toTopOf="@+id/backgroundOne"
+        app:layout_constraintStart_toEndOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background"
         app:srcCompat="@drawable/information" />
 </androidx.constraintlayout.widget.ConstraintLayout>

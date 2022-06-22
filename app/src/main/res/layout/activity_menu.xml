@@ -60,7 +60,7 @@
         app:srcCompat="@drawable/profile" />
 
     <Button
-        android:id="@+id/buttonInversion"
+        android:id="@+id/btInvest"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="75dp"
@@ -123,10 +123,10 @@
         android:textAllCaps="false"
         android:textColor="#7673EC"
         android:textSize="18dp"
-        app:layout_constraintEnd_toEndOf="@+id/buttonInversion"
+        app:layout_constraintEnd_toEndOf="@+id/btInvest"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/buttonInversion"
-        app:layout_constraintTop_toBottomOf="@+id/buttonInversion" />
+        app:layout_constraintStart_toStartOf="@+id/btInvest"
+        app:layout_constraintTop_toBottomOf="@+id/btInvest" />
 
     <Button
         android:id="@+id/buttonCostos"

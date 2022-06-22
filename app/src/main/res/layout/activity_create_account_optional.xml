@@ -53,13 +53,13 @@
         android:fontFamily="@font/urbanistbold"
         android:text="Continuar después"
         android:textColor="#4448AE"
-        app:layout_constraintEnd_toEndOf="@+id/backgroundOne"
-        app:layout_constraintStart_toStartOf="@+id/backgroundOne"
-        app:layout_constraintTop_toTopOf="@+id/backgroundOne" />
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background" />
 
 
     <Button
-        android:id="@+id/backgroundOne"
+        android:id="@+id/background"
         android:clickable="false"
         android:layout_width="300dp"
         android:layout_height="170dp"
@@ -108,9 +108,9 @@
         android:background="@drawable/circle"
         android:backgroundTint="#B3AFFD"
         android:text="➜"
-        app:layout_constraintBottom_toBottomOf="@+id/backgroundOne"
-        app:layout_constraintEnd_toEndOf="@+id/backgroundOne"
-        app:layout_constraintStart_toStartOf="@+id/backgroundOne"
-        app:layout_constraintTop_toTopOf="@+id/backgroundOne" />
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
