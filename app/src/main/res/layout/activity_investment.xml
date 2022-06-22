@@ -36,13 +36,13 @@
         android:id="@+id/benefitInput"
         android:layout_width="139dp"
         android:layout_height="48dp"
-        android:layout_marginTop="31dp"
-        android:layout_marginEnd="12dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="36dp"
         android:ems="10"
         android:fontFamily="@font/urbanistbold"
         android:inputType="textPersonName"
-        android:text="Beneficio"
-        app:layout_constraintEnd_toEndOf="@+id/textView16"
+        android:hint="Beneficio"
+        app:layout_constraintEnd_toStartOf="@+id/investmentInput"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <EditText
@@ -54,7 +54,7 @@
         android:ems="10"
         android:fontFamily="@font/urbanistbold"
         android:inputType="textPersonName"
-        android:text="Inversión"
+        android:hint="Inversión"
         app:layout_constraintStart_toStartOf="@+id/textView16"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
@@ -73,8 +73,8 @@
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="72dp"
         android:fontFamily="@font/urbanistbold"
         android:text="Resultados"
         android:textSize="20sp"
@@ -85,33 +85,29 @@
         android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="164dp"
         android:elevation="3dp"
         android:fontFamily="@font/urbanistbold"
         android:text="ROI = "
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/background"
-        app:layout_constraintEnd_toEndOf="@+id/background"
-        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintEnd_toStartOf="@+id/tvRoi"
         app:layout_constraintStart_toStartOf="@+id/background"
-        app:layout_constraintTop_toBottomOf="@+id/textView20"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/background" />
 
     <TextView
         android:id="@+id/tvRoi"
-        android:layout_width="55dp"
-        android:layout_height="28dp"
-        android:layout_marginBottom="164dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:elevation="3dp"
         android:fontFamily="@font/urbanistbold"
         android:text="n/a"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/background"
         app:layout_constraintEnd_toEndOf="@+id/background"
-        app:layout_constraintHorizontal_bias="0.418"
-        app:layout_constraintStart_toStartOf="@+id/background"
-        app:layout_constraintTop_toBottomOf="@+id/textView20"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintHorizontal_bias="0.664"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:layout_constraintVertical_bias="0.533" />
 
     <TextView
         android:id="@+id/textView17"
@@ -152,7 +148,7 @@
         android:id="@+id/btCalculate"
         android:layout_width="98dp"
         android:layout_height="48dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="108dp"
         android:background="@drawable/rounded_corner"
         android:backgroundTint="#B8B7F2"
@@ -160,7 +156,7 @@
         android:fontFamily="@font/urbanistbold"
         android:text="Calcular"
         app:layout_constraintEnd_toEndOf="@+id/investmentInput"
-        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintHorizontal_bias="0.992"
         app:layout_constraintStart_toStartOf="@+id/benefitInput"
         app:layout_constraintTop_toBottomOf="@+id/investmentInput"
         app:rippleColor="#B8B7F2"
@@ -168,9 +164,9 @@
 
     <Button
         android:id="@+id/background"
-        android:layout_width="332dp"
-        android:layout_height="221dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="241dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="112dp"
         android:background="@drawable/rounded_corner"
         android:backgroundTint="@color/white"
         android:clickable="true"
@@ -178,7 +174,6 @@
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.392"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView20"
         app:layout_constraintVertical_bias="1.0" />

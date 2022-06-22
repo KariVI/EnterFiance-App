@@ -27,7 +27,7 @@ public class Investment extends AppCompatActivity {
                 float investmentValue =  Integer.parseInt(String.valueOf(investment.getText()));
                 float ROI = (benefitValue - investmentValue) / investmentValue;
                 TextView ROIValue =  (TextView) findViewById(R.id.tvRoi);
-                ROIValue.setText(String. valueOf(ROI));
+                ROIValue.setText(String. valueOf(ROI*100)+" %");
             }
         }
         );
