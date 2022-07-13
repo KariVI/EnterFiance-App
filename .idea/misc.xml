@@ -4,12 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/jack-/AndroidStudioProjects/EnterFiance/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="app/src/main/res/drawable/rounded_corner.xml" value="0.138" />
         <entry key="app/src/main/res/layout/activity_create_account.xml" value="0.20465116279069767" />
         <entry key="app/src/main/res/layout/activity_create_account_business.xml" value="0.182518115942029" />
         <entry key="app/src/main/res/layout/activity_create_account_optional.xml" value="0.182518115942029" />
         <entry key="app/src/main/res/layout/activity_investment.xml" value="0.30106353759765625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18978118896484386" />
-        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.182518115942029" />
+        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.1875" />
         <entry key="app/src/main/res/layout/activity_pre_create_account.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_pre_investment.xml" value="0.1847793579101563" />
         <entry key="app/src/main/res/layout/spinner_selected_item.xml" value="0.1" />
